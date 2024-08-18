@@ -1,0 +1,120 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frida Kahlo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Frida Kahlo</h1>
+    <p class="quote"><i>"My painting carries with it the message of pain" — Frida Kahlo</i></p>
+    <div id="img-div">
+      <img id="image" alt="A black-and-white photograph of famous Mexican painter Frida Kahlo" src="https://kuadros.com/cdn/shop/articles/6d84fef20e20ab2a1343f8b9ac172f02.jpg?v=1616860839">
+      <figcaption id="img-caption"><i>Frida Kahlo</i> (1939), photographed by Nickolas Muray</figcaption>
+    </div>
+    <div id="tribute-info">
+      <h2>Here's a timeline of Frida Kahlo's life:</h2>
+      </div>
+      <div class="tribute-text">
+      <ul>
+        <li><b>1907</b> - Born on July 6, in Coyoacán, Mexico.</li>
+        <li><b>1913</b> - Contracts polio as a young girl, leaving her bedridden for nine months and also with a slight but permanent limp as a result of the disease damaging her right leg and foot.</li>
+        <li><b>1922</b> - Enrolls in the National Preparatory School in Mexico City with the desire of studying medicine. She was one of the few female students attending the school, and was known for her cheerful nature and colourful traditional clothing and jewellery.</li>
+        <li><b>1925</b> - Is involved in a bus accident which severely injures her resulting in her undergoing over thirty medical operations over the course of her life. During Kahlo’s recovery, she learns how to paint, and completes her first self-portrait, <i>Self-Portrait Wearing a Velvet Dress</i> (1926), which she gifted to her friend and romantic interest at the time.</li>
+        <li><b>1929</b> - Marries Diego Rivera — a famous Mexican painter and muralist — whom she met whilst attending her preparatory school where he was working on a mural for the school’s auditorium.</li>
+        <li><b>1930</b> - Kahlo and Rivera move to the United States of America due to her husband receiving mural commissions from several cities there. During the first six months of the couple’s stay in the USA, Kahlo produced six works.</li>
+        <li><b>1932</b> - Frida Kahlo and her husband move to Detroit where Rivera has been offered another commission. Kahlo suffers a miscarriage less than four months into her pregnancy. This event, coupled with the death of her mother later the same year leads Kahlo to paint some of her most heartbreaking works: <i>Henry Ford Hospital</i> (1932) and <i>My Birth</i> (1932).</li>
+        <li><b>1934</b> - Suffers another miscarriage. On the first operation on her right foot, the artist loses several toes. Kahlo’s husband begins an affair with her younger sister, Cristina. Kahlo did not produce a single work during this year.</li>
+        <li><b>1938</b> - The first solo exhibition of Kahlo’s work is held at the Julien Levy Gallery in New York.</li> 
+        <li><b>1939</b> - The success of Kahlo’s exhibition in New York lead to another one in Paris. It was there that she met other artists, such as Pablo Picasso and Marcel Duchamp. The Louvre purchased Kahlo’s The Frame (1938) making Kahlo the first Mexican artist to be presented in the esteemed museum’s collection. Within this year, Kahlo divorced Rivera, due to his various affairs, including her own sister. Kahlo coped with her pain — emotional and physical — with alcohol, and her health was greatly impacted by this.</li>
+        <li><b>1940</b> - Presents two of her now most famous works, <i>The Two Fridas</i> (1939) and <i>The Wounded Table</i> (1940), at the International Surrealist Exhibition in Mexico City. She remarries Diego Rivera.</li>
+        <li><b>1942</b> - Starts writing a diary depicting her own physical pain and suffering but also including the exquisiteness of the world. Kahlo also becomes a founding member of the Seminario de Cultura Mexicana, a group of artists commissioned by the Ministry of Public Education to spread public knowledge of Mexican culture.</li>
+        <li><b>1943</b> - Offered a position as a professor of painting at La Esmeralda, the Education Ministry’s School of Fine Arts. Although after teaching for a few months, health complications prevent her from commuting to the school so she teaches her lessons at her home in Coyoacán instead. She taught for over ten years.</li>
+        <li><b>1946</b> - Travels to New York for a spine operation in hopes of alleviating her severe back pain; however, the surgery fails. Kahlo is awarded the National Prize for Painting for her work, <i>Moses</i> (1945).</li>
+        <li><b>1948</b> - Rejoins the Mexican Communist Party and campaigns for peace.</li>
+        <li><b>1950</b> - Her health issues rapidly deteriorate. She spends nine months in the hospital being operated on after a diagnosis of gangrene in her right foot. However, despite limited mobility, Kahlo remains politically active and tenacious with her painting. From this year onwards, Kahlo is often confined to a wheelchair.</li>
+        <li><b>1953</b> - Her right leg is amputated below the knee to prevent the spread of gangrene. Irregardless, she attends her first solo exhibition of her works in Mexico bedridden.</li>
+        <li><b>1954</b> - Dies approximately a week after her 47th birthday. Although Kahlo’s death was reported to caused by a pulmonary embolism, there were speculations it was indeed suicide.</li>
+      </ul>
+    </div>
+    <h2 id="extra-info">Feel free to read more about Kahlo's life <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Frida_Kahlo">here</a></h2>
+  </main>
+</body>
+</html>  
+
+** end of undefined **
+
+** start of undefined **
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Futura, Andale Mono;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 60px;
+}
+
+.quote {
+  margin-top: -40px;
+  font-size: 20px;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcccb;
+  border: 30px solid #ffcccb;
+}
+
+#img-div #image {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+#tribute-info {
+  margin-top: 30px;
+}
+
+.tribute-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+li {
+  margin-top: 25px;
+}
+
+#extra-info {
+  margin-bottom: 35px;
+}
+
+** end of undefined **
+
